@@ -1,0 +1,55 @@
+/* #= select ID ex: <div id="menu"></div>
+. = select class ex: div class="card"></div>
+(nada) tag/elemento HTML direto ex: <p> texto</p>
+
+#id → Único.
+
+.classe → Pode repetir quantas vezes quiser.
+
+tag → Alvo é todos os elementos daquela tag.*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;          /*external space*/
+    padding: 0;      /*internal space*/
+    font-family: sans-serif
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #F1F2F7;
+    width: 240px;
+    min-height: 100vh;
+    padding: 20px;
+    flex-shrink: 0; /*impede q a sidebar encolha*/
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    color: #5A67BA;
+}
+
+.main-area {
+    display: flex;
+    flex-direction: column; /*empilhar a topbar e content verticalmente*/
+}
+
+.topbar {
+    width: 100%;
+    height: 32px;
+    color: #5A67BA;
+}
+
+.content {
+    flex-grow: 1; /* o item vai crescer pra ocupar o espaço livre*/
+    
+}
+
+.chart-area {
+    width: 2%;
+    height: ;
+}

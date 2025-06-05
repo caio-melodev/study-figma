@@ -22,7 +22,7 @@ tag → Alvo é todos os elementos daquela tag.*/
 
 .sidebar {
     background-color: #F1F2F7;
-    width: 240px;
+    width: 180px;
     min-height: 100vh;
     padding: 20px;
     flex-shrink: 0; /*impede q a sidebar encolha*/
@@ -35,21 +35,32 @@ tag → Alvo é todos os elementos daquela tag.*/
 
 .main-area {
     display: flex;
-    flex-direction: column; /*empilhar a topbar e content verticalmente*/
+    flex-direction: column; /*empilhar a topbar e content ficam um em cima d outro */
 }
 
 .topbar {
-    width: 100%;
+    width: %; /*ocupa toda largura disponivel da .main-area. */
     height: 32px;
-    color: #5A67BA;
+    background-color: #5A67BA;
+    border-bottom: 1px solid #e0E0E0;
+    padding: 0 20px; /* ESPAÇAMENTO INTERNO: 0 de espaço em cima/baixo, 20 px nas laterais*/
 }
 
+.topbar input[type="text"] {
+    padding: 6px 8px; /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
+    color:  #1F384C;
+    min-width: 625px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.user-menu span { /* texto delicious burger" */
+    margin-right: 8px; /*espaço antes da seta*/
+    font-size: 13px;
+    color: #1F384C;
+}
 .content {
     flex-grow: 1; /* o item vai crescer pra ocupar o espaço livre*/
     
 }
 
-.chart-area {
-    width: 2%;
-    height: ;
-}

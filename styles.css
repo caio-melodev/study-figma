@@ -29,7 +29,7 @@ tag → Alvo é todos os elementos daquela tag.*/
 }
 
 .sidebar h1 {
-    font-size: 24px;
+    font-size: 11px;
     color: #5A67BA;
 }
 
@@ -38,18 +38,22 @@ tag → Alvo é todos os elementos daquela tag.*/
     flex-direction: column; /*empilhar a topbar e content ficam um em cima d outro */
 }
 
-.topbar {
-    width: %; /*ocupa toda largura disponivel da .main-area. */
-    height: 32px;
-    background-color: #5A67BA;
+.topbar {  /* inclui search e user actions*/
+    width: 80vh; /*ocupa toda largura disponivel da .main-area. */
+    height: 40px;
     border-bottom: 1px solid #e0E0E0;
     padding: 0 20px; /* ESPAÇAMENTO INTERNO: 0 de espaço em cima/baixo, 20 px nas laterais*/
+    display: flex; /*transforma os filhos diretos (search e user actions) em "flex itens" 
+    e os coloca em uma linha um ao lado do outro */
+    align-items: center; /*os itens ficam alinhados no meio da topbar*/
+    justify-content: space-between; /* coloca o search para a esquerda e
+    o user actions para a direita, o espaço que sobrar fica no meio */
 }
 
 .topbar input[type="text"] {
-    padding: 6px 8px; /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
+    padding: 5px 8px; /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
     color:  #1F384C;
-    min-width: 625px;
+    min-width: 455px;
     font-size: 13px;
     border-radius: 5px;
 }
@@ -59,8 +63,23 @@ tag → Alvo é todos os elementos daquela tag.*/
     font-size: 13px;
     color: #1F384C;
 }
+
+.user-actions {
+    align-items: center;
+}
+
+.user-menu {
+    align-items: center;
+    cursor: pointer;
+}
+
 .content {
     flex-grow: 1; /* o item vai crescer pra ocupar o espaço livre*/
-    
+    padding: 20px; /* espaçamento geral na área de conteudo */
+}
+
+.chart-card {
+    width: 3px;
+    height: 322px;
 }
 

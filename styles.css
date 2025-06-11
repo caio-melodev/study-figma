@@ -12,8 +12,51 @@ tag → Alvo é todos os elementos daquela tag.*/
     box-sizing: border-box;
     margin: 0;          /*external space*/
     padding: 0;      /*internal space*/
-    font-family: sans-serif
+    font-family: 'Segoe UI';
 }
+
+.topbar {  /* inclui search e user actions*/
+     /*ocupa toda largura disponivel da .main-area. */
+    height: 40px;
+    border-bottom: 1px solid #e0E0E0;
+    padding: 0 20px; /* ESPAÇAMENTO INTERNO: 0 de espaço em cima/baixo, 20 px nas laterais*/
+    display: flex; /*transforma os filhos diretos (search e user actions) em "flex itens" 
+    e os coloca em uma linha um ao lado do outro */
+    align-items: center; /*os itens ficam alinhados no meio da topbar*/
+    justify-content: space-between; /* coloca o search para a esquerda e
+    o user actions para a direita, o espaço que sobrar fica no meio */
+}
+
+.search-container{
+    flex-grow: 1;
+    margin-right: 20px; /*cria uma margem pra certificar que não a search
+    nao vai encostar no span*/
+}
+
+.topbar input[type="text"] {
+    width: 46%;
+    padding: 6px 8px; /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
+    color:  #1F384C;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-menu span { /* texto delicious burger" */
+    margin-right: 8px; /*espaço antes da seta*/
+    font-size: 13px;
+    color: #1F384C;
+}
+
+.user-actions {
+    align-items: center;
+}
+
+.user-menu {
+    align-items: center;
+    cursor: pointer;
+}
+
 
 .dashboard {
     display: flex;
@@ -35,43 +78,10 @@ tag → Alvo é todos os elementos daquela tag.*/
 
 .main-area {
     display: flex;
+    width: 100%;
     flex-direction: column; /*empilhar a topbar e content ficam um em cima d outro */
 }
 
-.topbar {  /* inclui search e user actions*/
-    width: 80vh; /*ocupa toda largura disponivel da .main-area. */
-    height: 40px;
-    border-bottom: 1px solid #e0E0E0;
-    padding: 0 20px; /* ESPAÇAMENTO INTERNO: 0 de espaço em cima/baixo, 20 px nas laterais*/
-    display: flex; /*transforma os filhos diretos (search e user actions) em "flex itens" 
-    e os coloca em uma linha um ao lado do outro */
-    align-items: center; /*os itens ficam alinhados no meio da topbar*/
-    justify-content: space-between; /* coloca o search para a esquerda e
-    o user actions para a direita, o espaço que sobrar fica no meio */
-}
-
-.topbar input[type="text"] {
-    padding: 5px 8px; /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
-    color:  #1F384C;
-    min-width: 455px;
-    font-size: 13px;
-    border-radius: 5px;
-}
-
-.user-menu span { /* texto delicious burger" */
-    margin-right: 8px; /*espaço antes da seta*/
-    font-size: 13px;
-    color: #1F384C;
-}
-
-.user-actions {
-    align-items: center;
-}
-
-.user-menu {
-    align-items: center;
-    cursor: pointer;
-}
 
 .content {
     flex-grow: 1; /* o item vai crescer pra ocupar o espaço livre*/

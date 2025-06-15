@@ -69,11 +69,18 @@ tag → Alvo é todos os elementos daquela tag.*/
     min-height: 100vh;
     padding: 20px;
     flex-shrink: 0; /*impede q a sidebar encolha*/
+    
+}
+
+.sidebar-header{
+    display: flex;
+
 }
 
 .sidebar h1 {
-    font-size: 11px;
+    font-size: 13px;
     color: #5A67BA;
+    margin-left: 4px;
 }
 
 .main-area {

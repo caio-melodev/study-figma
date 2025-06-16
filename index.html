@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
                     <li> <!--essa tag representa um item individual dentro de uma lista
                         , sempre deve estar dentro de um conteiner de lista, ul ou ol
                         em resumo cada li é um pedaço da lista-->
-                        <a href="#" class="menu-item active"> <!-- estudar sobre classe active **-->
+                        <a href="#" class="menu-item"> <!-- estudar sobre classe active **-->
                             <img src="assets/dashboard_icon.png" width="18" height="18" alt="dashboard_icon">
                             <span>Dashboard</span>
                         </a>
@@ -56,37 +57,38 @@
                     </li>
                 </ul>
             </nav>
-            <nav class="sidebar-others"></nav>
-            <h3>Others</h3>
-            <ul>
-                <li>
-                    <a href="#" class="menu-item">
-                        <img src="assets/settings_icon.png" width="18" height="18" alt="settings_icon">
-                        <span>Settings</span>
-                    </a>
-                </li>
+            <nav class="sidebar-others">
+                <h2> OTHERS </h2>
+                <ul>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="assets/settings_icon.png" width="18" height="18" alt="settings_icon">
+                            <span>Settings</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="menu-item">
-                        <img src="assets/payment_icon.png" width="18" height="18" alt="payment_icon">
-                        <span>Payment</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="assets/payment_icon.png" width="18" height="18" alt="payment_icon">
+                            <span>Payment</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="menu-item">
-                        <img src="assets/accounts_icon.png" width="18" height="18" alt="accounts_icon">
-                        <span>Accounts</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="assets/accounts_icon.png" width="18" height="18" alt="accounts_icon">
+                            <span>Accounts</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="menu-item">
-                        <img src="assets/help_icon.png" width="18" height="18" alt="help_icon">
-                        <span>Help</span>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="assets/help_icon.png" width="18" height="18" alt="help_icon">
+                            <span>Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         <div class="main-area">
 
@@ -95,11 +97,15 @@
                     <input type="text" placeholder="Search">
                 </div>
                 <div class="user-actions">
+                    
                     <div class="user-menu">
                         <span> Delicious Burger</span>
                         <span class="burger_ellipse">
                             <img src="assets/burger.png" width="16" height="16">
                         </span>
+                    <div class="notification">
+                        <img src="assets/notification.png" width="12.8" height="16">
+                    </div>
                     </div>
                 </div>
             </header>

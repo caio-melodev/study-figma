@@ -110,7 +110,10 @@ tag → Alvo é todos os elementos daquela tag.*/
 
 .chart-card {
     position: relative; /* Essencial para o modo responsivo do Chart.js */
-    height: 400px;      /* Defina uma altura para o contêiner */
-    width: 100%;        /* Opcional: faz o contêiner ocupar a largura disponível */
-    max-width: 500px;   /* Opcional: limita o tamanho em telas muito grandes */
+    width: clamp(120px, 15vw, 150px); /*largura com clamp, min/preferido/max*/
+    aspect-ratio: 1/1; /*o card sempre vai ser quadrado(n precisa definir height*/
+}
+
+.custom-legend {
+margin-top: 1px;
 }

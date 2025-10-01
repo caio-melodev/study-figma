@@ -12,6 +12,7 @@ export class App implements AfterViewInit {
   protected readonly title = signal('figma-frontend-angular');
 
   @ViewChild('doughnutChart') doughnutChart!: ElementRef<HTMLCanvasElement>;
+  @ViewChild('barChart') barChart!: ElementRef<HTMLCanvasElement>;
 
   ngAfterViewInit() {
     new Chart(this.doughnutChart.nativeElement, {
@@ -39,5 +40,34 @@ export class App implements AfterViewInit {
         cutout: '75%' // Makes it look more doughnut-like
       }
     });
+
+    new Chart(this.barChart.nativeElement, {
+      type: 'bar',
+      data: {
+        labels: ['Afternoon', 'Evening'],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [65, 59, 80, 81, 56, 55, 40],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(201, 203, 207, 0.2)'
+          ],
+          borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: false,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
   }
 }
+

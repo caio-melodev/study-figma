@@ -1,24 +1,29 @@
 <div class="dashboard">
   <aside class="sidebar">
     <div class="sidebar-header">
-      <img src="G.png" width="24" height="24">
+      <img src="G.png" width="24" height="24" />
       <h1>GOODFOOD</h1>
     </div>
-    <nav class="sidebar-menu"> <!--tag para seções de navegação -->
+    <nav class="sidebar-menu">
+      <!--tag para seções de navegação -->
       <h2>MENU</h2>
-      <ul> <!--essa tag é um conteiner p uma lista de itens não ordenada, ou seja, a ordem dos itens não importa-->
-        <li> <!--essa tag representa um item individual dentro de uma lista
+      <ul>
+        <!--essa tag é um conteiner p uma lista de itens não ordenada, ou seja, a ordem dos itens não importa-->
+        <li>
+          <!--essa tag representa um item individual dentro de uma lista
                         , sempre deve estar dentro de um conteiner de lista, ul ou ol
                         em resumo cada li é um pedaço da lista-->
-          <a href="#" class="menu-item"> <!-- estudar sobre classe active **-->
-            <img src="dashboard_icon.png" width="18" height="18" alt="dashboard_icon">
+          <a href="#" class="menu-item">
+            <!-- estudar sobre classe active **-->
+            <img src="dashboard_icon.png" width="18" height="18" alt="dashboard_icon" />
             <span>Dashboard</span>
           </a>
-        </li> <!---->
+        </li>
+        <!---->
 
         <li>
           <a href="#" class="menu-item">
-            <img src="foodorder_icon.png" width="18" height="18" alt="foodorder_icon">
+            <img src="foodorder_icon.png" width="18" height="18" alt="foodorder_icon" />
             <!-- Exemplo de outro item de menu -->
             <span>Food Order</span>
           </a>
@@ -26,46 +31,46 @@
 
         <li>
           <a href="#" class="menu-item">
-            <img src="managemenu_icon.png" width="18" height="18" alt="managemenu_icon">
+            <img src="managemenu_icon.png" width="18" height="18" alt="managemenu_icon" />
             <span>Manage Menu</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="menu-item">
-            <img src="customerreview_icon.png" width="18" height="18" alt="customerreview_icon">
+            <img src="customerreview_icon.png" width="18" height="18" alt="customerreview_icon" />
             <span>Customer Review</span>
           </a>
         </li>
       </ul>
     </nav>
     <nav class="sidebar-others">
-      <h2> OTHERS </h2>
+      <h2>OTHERS</h2>
       <ul>
         <li>
           <a href="#" class="menu-item">
-            <img src="settings_icon.png" width="18" height="18" alt="settings_icon">
+            <img src="settings_icon.png" width="18" height="18" alt="settings_icon" />
             <span>Settings</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="menu-item">
-            <img src="payment_icon.png" width="18" height="18" alt="payment_icon">
+            <img src="payment_icon.png" width="18" height="18" alt="payment_icon" />
             <span>Payment</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="menu-item">
-            <img src="accounts_icon.png" width="18" height="18" alt="accounts_icon">
+            <img src="accounts_icon.png" width="18" height="18" alt="accounts_icon" />
             <span>Accounts</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="menu-item">
-            <img src="help_icon.png" width="18" height="18" alt="help_icon">
+            <img src="help_icon.png" width="18" height="18" alt="help_icon" />
             <span>Help</span>
           </a>
         </li>
@@ -73,31 +78,38 @@
     </nav>
   </aside>
   <div class="main-area">
-
     <header class="topbar">
       <div class="search-container">
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search" />
       </div>
       <div class="user-actions">
-
         <div class="user-menu">
           <span> Delicious Burger</span>
           <span class="burger_ellipse">
-            <img src="burger.png" width="16" height="16">
+            <img src="burger.png" width="16" height="16" />
           </span>
           <div class="notification">
-            <img src="notification.png" width="12.8" height="16">
+            <img src="notification.png" width="12.8" height="16" />
           </div>
         </div>
       </div>
     </header>
 
     <main class="content">
-      <section class="chart-card">
-        <canvas #doughnutChart></canvas>
-        <canvas #barChart></canvas>
-        <canvas #bubbleChart></canvas>
-        <canvas #lineChart></canvas>
+      <section class="charts">
+        <div class="top-row">
+          <canvas id="barChart" #barChart></canvas>
+          <canvas id="doughnutChart" #doughnutChart></canvas>
+        </div>
+        <div class="bottom-row">
+          <div id="yourRating">
+            <h3>Your Rating</h3>
+          </div>
+          <div id="mostOrdered">
+            <h3>Most Ordered Food</h3>
+          </div>
+          <canvas id="lineChart" #lineChart></canvas>
+        </div>
       </section>
     </main>
   </div>

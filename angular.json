@@ -26,7 +26,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/sidebar.css"
+              "src/sidebar.css",
+              "src/charts.css"
             ]
           },
           "configurations": {
@@ -84,7 +85,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/sidebar.css"
+              "src/sidebar.css",
+              "src/charts.css"
             ]
           }
         }

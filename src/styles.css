@@ -101,14 +101,3 @@ tag → Alvo é todos os elementos daquela tag.*/
 }
 
 
-.content {
-    flex-grow: 1;
-    /* o item vai crescer pra ocupar o espaço livre*/
-    padding: 20px;
-    /* espaçamento geral na área de conteudo */
-}
-
-.chart-card {
-    width: 3px;
-    height: 322px;
-}

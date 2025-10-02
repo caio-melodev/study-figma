@@ -54,14 +54,20 @@ export class App implements AfterViewInit {
     new Chart(this.barChart.nativeElement, {
       type: 'bar',
       data: {
-        labels: ['Afternoon', 'Evening'],
+        labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
         datasets: [
           {
             label: 'My First Dataset',
-            data: [65, 59, 80, 81, 56, 55, 40],
+            data: [65, 59, 80, 81, 56, 55, 40, 43, 40, 23, 11, 21],
             backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(201, 203, 207, 0.2)'],
             borderColor: ['rgb(255, 99, 132)', 'rgb(255, 159, 64)'],
             borderWidth: 1,
+          },
+          {
+            label: 'Test',
+            data: [32, 23, 23, 23, 23, 23, 21, 43, 40, 23, 11, 11],
+            backgroundColor: ['#E6E8EC']
+
           },
         ],
       },

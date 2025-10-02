@@ -1,0 +1,38 @@
+
+.charts {
+    padding: 24px;
+}
+
+.charts>* {
+    outline: 2px dashed #f44336;
+}
+
+.top-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+
+#doughnutChart {    
+    margin-left: auto;
+}
+
+/*
+.content {}
+
+#yourRating {}
+
+#mostOrdered {}
+#barChart {
+    
+}
+
+#lineChart {}*/

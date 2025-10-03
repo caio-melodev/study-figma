@@ -31,16 +31,8 @@ export class App implements AfterViewInit {
           {
             label: 'Votes',
             data: [40, 32, 28],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.7)',
-              'rgba(54, 162, 235, 0.7)',
-              'rgba(255, 206, 86, 0.7)',
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-            ],
+            backgroundColor: 'rgba(54, 162, 235, 1)',
+            borderColor: 'rgba(200, 200, 200, 1)',
             borderWidth: 0,
           },
         ],
@@ -58,24 +50,44 @@ export class App implements AfterViewInit {
         datasets: [
           {
             label: 'My First Dataset',
-            data: [65, 59, 80, 81, 56, 55, 40, 43, 40, 23, 11, 21],
-            backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(201, 203, 207, 0.2)'],
-            borderColor: ['rgb(255, 99, 132)', 'rgb(255, 159, 64)'],
+            data: [45, 35, 40, 30, 50, 55, 45, 35, 40, 30, 50, 55],
+            backgroundColor: '#5A6ACF',
+            borderColor: '#E6E8EC',
             borderWidth: 1,
+            barPercentage: 0.6,
+            categoryPercentage: 0.4,
           },
           {
             label: 'Test',
-            data: [32, 23, 23, 23, 23, 23, 21, 43, 40, 23, 11, 11],
-            backgroundColor: ['#E6E8EC']
-
+            data: [25, 45, 20, 40, 35, 25, 25, 45, 20, 40, 35, 25],
+            backgroundColor: ['#E6E8EC'],
+            barPercentage: 0.6,
+            categoryPercentage: 0.4 ,
           },
         ],
       },
       options: {
-        responsive: false,
+        responsive: true,
+        maintainAspectRatio: false, // Pode ser útil para controlar o tamanho
+        plugins: {
+          legend: {
+            display: false, // Remove a legenda no topo
+          },
+          title: {
+            display: false, // Remove o título principal
+          },
+        },
         scales: {
+          x: {
+            grid: {
+              display: false, // Remove as linhas de grade verticais
+            },
+          },
           y: {
-            beginAtZero: true,
+            display: false, // Remove completamente o eixo Y (incluindo valores e linhas de grade)
+            grid: {
+              display: false, // Garante que não há linhas de grade horizontais caso display: false não funcione completamente
+            },
           },
         },
       },

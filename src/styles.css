@@ -20,7 +20,7 @@ tag → Alvo é todos os elementos daquela tag.*/
 .topbar {
      /* inclui search e user actions*/
      /*ocupa toda largura disponivel da .main-area. */
-    height: 40px;
+    height: 7vh;
     border-bottom: 1px solid #e0E0E0;
     padding: 0 20px;
     /* ESPAÇAMENTO INTERNO: 0 de espaço em cima/baixo, 20 px nas laterais*/
@@ -49,6 +49,7 @@ tag → Alvo é todos os elementos daquela tag.*/
     font-size: 13px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-left: 2vh;
 }
 
 .user-menu span {

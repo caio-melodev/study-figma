@@ -99,11 +99,27 @@
       <h1>Dashboard</h1>
       <section class="charts">
         <div class="top-row">
-          <div class="bar-chart-container">
-          <canvas id="barChart" #barChart></canvas>
+          <div class="revenue-card">
+            <header class="card-header">
+              <div class="revenue-info">
+                <p class="revenue-title">Revenue</p>
+                <h2 class="revenue-amount">IDR 7.852.000</h2>
+                <p class="revenue-comparison">
+                  <span class="positive-change">↑ 2.1%</span> vs last week
+                </p>
+              </div>
+              <button class="report-button">View Report</button>
+            </header>
+
+            <div class="bar-chart-container">
+              <h2 class="sales-date">Sales from 1-12 Dec, 2020</h2>
+              <canvas id="barChart" #barChart></canvas>
+            </div>
           </div>
+
           <canvas id="doughnutChart" #doughnutChart></canvas>
         </div>
+
         <div class="bottom-row">
           <div id="yourRating">
             <h3>Your Rating</h3>

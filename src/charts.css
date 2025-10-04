@@ -1,10 +1,11 @@
 .content h1 {
-    font-weight:400;
-    font-size:18px;
-    padding:4px;
-    margin-top:3.5vh;
-    margin-left:1.5vw;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 4px;
+    margin-top: 3.5vh;
+    margin-left: 1.5vw;
 }
+
 .charts {
     padding: 24px;
 }
@@ -20,22 +21,66 @@
     margin-top: 5vh;
 }
 
-.bottom-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    /* Joga os filhos para lados opostos */
+    align-items: flex-start;
+    /* Alinha os itens no topo */
 }
 
+.bar-chart-container {
+    width: 47vw;
+    height: 15vh;
+}
 
+.revenue-title {
+    font-size: 14px;
+}
+
+.revenue-info h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+
+.positive-change {
+    color: #149D52;
+    margin-top: 2vh;
+}
+
+.revenue-comparison {
+    font-size: 12px;
+    color: #737B8B;
+}
+
+.sales-date{
+    font-size: 13px;
+    font-weight: 400;
+    color: #737B8B;
+    margin-top: 2vh;
+}
+
+.report-button {
+    background-color: #f8f9fa;
+    border: 1px solid #DDE4F0;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #5A6ACF;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+}
 
 #doughnutChart {
     margin-left: auto;
 }
 
 
-.bar-chart-container {
-    width: 47vw;
-    height: 15vh;
+.bottom-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 

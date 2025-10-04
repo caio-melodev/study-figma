@@ -32,6 +32,7 @@
 .bar-chart-container {
     width: 47vw;
     height: 15vh;
+    margin-top: 3vh;
 }
 
 .revenue-title {
@@ -49,12 +50,42 @@
     margin-top: 2vh;
 }
 
+.card-footer {
+    display: flex;
+    justify-content: left;
+    /* Centraliza os itens da legenda */
+    align-items: end;
+    gap: 24px;
+}
+
+/* Container para cada item da legenda (bolinha + texto) */
+.legend-item {
+    margin-top: 1.5vh;
+    display: flex;
+    align-items: center;
+    /* Alinha a bolinha e o texto verticalmente */
+    gap: 8px;
+    /* Espaço entre a bolinha e o texto */
+    font-size: 12px;
+    color: #6c757d;
+    /* Cor do texto da legenda */
+}
+
+/* A bolinha colorida */
+.legend-color-box {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* Isso transforma o quadrado em um círculo perfeito */
+    display: inline-block;
+}
+
 .revenue-comparison {
     font-size: 12px;
     color: #737B8B;
 }
 
-.sales-date{
+.sales-date {
     font-size: 13px;
     font-weight: 400;
     color: #737B8B;

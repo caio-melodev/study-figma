@@ -107,6 +107,7 @@
                 <p class="revenue-comparison">
                   <span class="positive-change">↑ 2.1%</span> vs last week
                 </p>
+
               </div>
               <button class="report-button">View Report</button>
             </header>
@@ -114,9 +115,18 @@
             <div class="bar-chart-container">
               <h2 class="sales-date">Sales from 1-12 Dec, 2020</h2>
               <canvas id="barChart" #barChart></canvas>
+              <footer class="card-footer">
+                <div class="legend-item">
+                  <span class="legend-color-box" style="background-color: #5A6ACF;"></span>
+                  <span>Last 6 days</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color-box" style="background-color: #E6E8EC;"></span>
+                  <span>Last Week</span>
+                </div>
+              </footer>
             </div>
           </div>
-
           <canvas id="doughnutChart" #doughnutChart></canvas>
         </div>
 

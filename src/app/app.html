@@ -89,11 +89,21 @@
           </span>
           <span> Delicious Burger</span>
           <button class="arrow-topbar">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.000000 14.000000"
-              preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,14.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
-                <path d="M15 110 c-5 -8 10 -30 39 -58 l46 -47 46 47 c29 28 44 50 39 58 -5 8
--19 0 -46 -26 l-39 -38 -39 38 c-27 26 -41 34 -46 26z" />
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 21.000000 14.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,14.000000) scale(0.100000,-0.100000)"
+                fill="currentColor"
+                stroke="none"
+              >
+                <path
+                  d="M15 110 c-5 -8 10 -30 39 -58 l46 -47 46 47 c29 28 44 50 39 58 -5 8
+-19 0 -46 -26 l-39 -38 -39 38 c-27 26 -41 34 -46 26z"
+                />
               </g>
             </svg>
           </button>
@@ -116,7 +126,6 @@
                 <p class="revenue-comparison">
                   <span class="positive-change">↑ 2.1%</span> vs last week
                 </p>
-
               </div>
               <button class="report-button">View Report</button>
             </header>
@@ -126,17 +135,41 @@
               <canvas id="barChart" #barChart></canvas>
               <footer class="card-footer">
                 <div class="legend-item">
-                  <span class="legend-color-box" style="background-color: #5A6ACF;"></span>
+                  <span class="legend-color-box" style="background-color: #5a6acf"></span>
                   <span>Last 6 days</span>
                 </div>
                 <div class="legend-item">
-                  <span class="legend-color-box" style="background-color: #E6E8EC;"></span>
+                  <span class="legend-color-box" style="background-color: #e6e8ec"></span>
                   <span>Last Week</span>
                 </div>
               </footer>
             </div>
           </div>
-          <canvas id="doughnutChart" #doughnutChart></canvas>
+          <div class="order-time">
+            <header class="card-header">
+              <p class="order-time-title">Order Time</p>
+              <button class="report-button">View Report</button>
+            </header>
+
+            <h2 class="order-time-date">Sales from 1-12 Dec, 2020</h2>
+            <canvas id="doughnutChart" #doughnutChart></canvas>
+            <footer class="doughnutChart-footer">
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #5a6acf"></span>
+                <span>Afternoon<p>40%</p></span>
+              </div>
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #8593ed"></span>
+                <span> Evening
+                  <p>32%</p></span
+                >
+              </div>
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #c7ceff"></span>
+                <span>Morning<p>28%</p></span>
+              </div>
+            </footer>
+          </div>
         </div>
 
         <div class="bottom-row">

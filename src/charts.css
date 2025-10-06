@@ -103,8 +103,23 @@
     font-size: 12px;
 }
 
-#doughnutChart {
-    margin-left: auto;
+.order-time {
+    padding-left: 14vw;
+    flex-grow: 1;
+}
+
+.order-time-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #737B8B;
+}
+
+.doughnutChart-footer {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os itens da legenda */
+    align-items: center;
+    gap: 24px;
 }
 
 

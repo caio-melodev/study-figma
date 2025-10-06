@@ -26,12 +26,12 @@ export class App implements AfterViewInit {
     new Chart(this.doughnutChart.nativeElement, {
       type: 'doughnut',
       data: {
-        labels: ['Afternoon', 'Evening', 'Morning'],
+        labels: ['', '', ''],
         datasets: [
           {
-            label: 'Afternoon',
+            label:'Afternoon',
             data: [40, 32, 28],
-            backgroundColor: '#8593ED',
+            backgroundColor: ['#5A6ACF', '#8593ED', '#C7CEFF'],
             borderColor: 'rgba(4, 1, 1, 1)',
             borderWidth: 0,
           },
@@ -40,6 +40,11 @@ export class App implements AfterViewInit {
       options: {
         responsive: false,
         cutout: '75%', // Makes it look more doughnut-like
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
       },
     });
 

@@ -29,10 +29,10 @@ export class App implements AfterViewInit {
         labels: ['Afternoon', 'Evening', 'Morning'],
         datasets: [
           {
-            label: 'Votes',
+            label: 'Afternoon',
             data: [40, 32, 28],
-            backgroundColor: 'rgba(54, 162, 235, 1)',
-            borderColor: 'rgba(200, 200, 200, 1)',
+            backgroundColor: '#8593ED',
+            borderColor: 'rgba(4, 1, 1, 1)',
             borderWidth: 0,
           },
         ],
@@ -62,7 +62,7 @@ export class App implements AfterViewInit {
             data: [25, 45, 20, 40, 35, 25, 25, 45, 20, 40, 35, 25],
             backgroundColor: ['#E6E8EC'],
             barPercentage: 0.6,
-            categoryPercentage: 0.4 ,
+            categoryPercentage: 0.4,
           },
         ],
       },

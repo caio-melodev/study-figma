@@ -38,7 +38,7 @@ export class App implements AfterViewInit {
         ],
       },
       options: {
-        responsive: false,
+        responsive: true,
         cutout: '75%', // Makes it look more doughnut-like
         plugins: {
           legend: {

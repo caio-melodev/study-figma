@@ -79,6 +79,9 @@
     /* Isso transforma o quadrado em um círculo perfeito */
     display: inline-block;
 }
+.doughnutChart-footer {
+    margin-inline: 23px;
+}
 
 .revenue-comparison {
     font-size: 12px;
@@ -105,13 +108,22 @@
 
 .order-time {
     padding-left: 14vw;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
 .order-time-date {
     font-size: 13px;
     font-weight: 400;
     color: #737B8B;
+}
+
+.doughnut-chart-container {
+  width: 121px;   
+  height: 124px;  
+  margin: 1vh auto; /* centraliza o gráfico e adiciona um espaço vertical */
+  margin-top: 3vh;
+  position: relative; 
+  
 }
 
 .doughnutChart-footer {

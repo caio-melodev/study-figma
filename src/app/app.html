@@ -150,34 +150,48 @@
               <p class="order-time-title">Order Time</p>
               <button class="report-button">View Report</button>
             </header>
-
-            <h2 class="order-time-date">Sales from 1-12 Dec, 2020</h2>
-            <canvas id="doughnutChart" #doughnutChart></canvas>
+            <h2 class="order-time-date">From 1-12 Dec, 2020</h2>
+            <div class="doughnut-chart-container">
+              <canvas id="doughnutChart" #doughnutChart></canvas>
+            </div>
             <footer class="doughnutChart-footer">
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #5a6acf"></span>
-                <span>Afternoon<p>40%</p></span>
+                <span
+                  >Afternoon
+                  <p>40%</p></span
+                >
               </div>
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #8593ed"></span>
-                <span> Evening
+                <span>
+                  Evening
                   <p>32%</p></span
                 >
               </div>
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #c7ceff"></span>
-                <span>Morning<p>28%</p></span>
+                <span
+                  >Morning
+                  <p>28%</p></span
+                >
               </div>
             </footer>
           </div>
         </div>
 
         <div class="bottom-row">
-          <div id="yourRating">
-            <h3>Your Rating</h3>
+          <div id="yourrating">
+            <header class="card-header-yourrating">
+            <h2>Your Rating</h2>
+            </header>
+            <h3 class="yourrating-legend">Lorem ipsum dolor sit amet, consectetur</h3>
           </div>
           <div id="mostOrdered">
-            <h3>Most Ordered Food</h3>
+             <header class="card-header-mostOrdered">
+            <h2>Most Ordered Food</h2>
+              <h3 class="mostOrdered-legend">Adipiscing elit, sed do eiusmod tempor</h3>
+          </header>
           </div>
           <canvas id="lineChart" #lineChart></canvas>
         </div>

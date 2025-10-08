@@ -79,9 +79,6 @@
     /* Isso transforma o quadrado em um círculo perfeito */
     display: inline-block;
 }
-.doughnutChart-footer {
-    margin-inline: 23px;
-}
 
 .revenue-comparison {
     font-size: 12px;

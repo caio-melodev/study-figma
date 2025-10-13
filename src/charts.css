@@ -58,25 +58,20 @@
     gap: 24px;
 }
 
-/* Container para cada item da legenda (bolinha + texto) */
 .legend-item {
     margin-top: 1.5vh;
     display: flex;
     align-items: center;
-    /* Alinha a bolinha e o texto verticalmente */
     gap: 8px;
-    /* Espaço entre a bolinha e o texto */
     font-size: 12px;
     color: #6c757d;
-    /* Cor do texto da legenda */
 }
 
-/* A bolinha colorida */
+
 .legend-color-box {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    /* Isso transforma o quadrado em um círculo perfeito */
     display: inline-block;
 }
 
@@ -117,7 +112,7 @@
 .doughnut-chart-container {
   width: 121px;   
   height: 124px;  
-  margin: 1vh auto; /* centraliza o gráfico e adiciona um espaço vertical */
+  margin: 1vh auto; 
   margin-top: 3vh;
   position: relative; 
   
@@ -126,7 +121,6 @@
 .doughnutChart-footer {
     display: flex;
     justify-content: center;
-    /* Centraliza os itens da legenda */
     align-items: center;
     gap: 24px;
 }
@@ -138,7 +132,67 @@
     gap: 24px;
 }
 
+#mostOrdered {
+  padding: 24px;
+  background-color: white; 
+  border-radius: 8px; 
+}
 
+#mostOrdered header {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #F1F2F7; 
+}
+
+#mostOrdered header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+#mostOrdered header p {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-top: 4px;
+}
+
+.food-list {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0; 
+  border-bottom: 1px solid #F1F2F7; 
+}
+
+.food-item:last-child {
+  border-bottom: none;
+}
+
+.food-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0; 
+  margin-right: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0; 
+}
+
+.food-name {
+  font-weight: 500;
+  color: #3A4A58;
+}
+
+.food-price {
+  margin-left: auto; 
+  font-weight: 500;
+  color: #3A4A58;
+}
 /*
 .content {}
 

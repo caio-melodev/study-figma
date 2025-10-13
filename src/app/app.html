@@ -89,21 +89,11 @@
           </span>
           <span> Delicious Burger</span>
           <button class="arrow-topbar">
-            <svg
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 21.000000 14.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,14.000000) scale(0.100000,-0.100000)"
-                fill="currentColor"
-                stroke="none"
-              >
-                <path
-                  d="M15 110 c-5 -8 10 -30 39 -58 l46 -47 46 47 c29 28 44 50 39 58 -5 8
--19 0 -46 -26 l-39 -38 -39 38 c-27 26 -41 34 -46 26z"
-                />
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.000000 14.000000"
+              preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,14.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                <path d="M15 110 c-5 -8 10 -30 39 -58 l46 -47 46 47 c29 28 44 50 39 58 -5 8
+-19 0 -46 -26 l-39 -38 -39 38 c-27 26 -41 34 -46 26z" />
               </g>
             </svg>
           </button>
@@ -157,24 +147,22 @@
             <footer class="doughnutChart-footer">
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #5a6acf"></span>
-                <span
-                  >Afternoon
-                  <p>40%</p></span
-                >
+                <span>Afternoon
+                  <p>40%</p>
+                </span>
               </div>
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #8593ed"></span>
                 <span>
                   Evening
-                  <p>32%</p></span
-                >
+                  <p>32%</p>
+                </span>
               </div>
               <div class="doughnutChart-legend-item">
                 <span class="legend-color-box" style="background-color: #c7ceff"></span>
-                <span
-                  >Morning
-                  <p>28%</p></span
-                >
+                <span>Morning
+                  <p>28%</p>
+                </span>
               </div>
             </footer>
           </div>
@@ -187,27 +175,48 @@
             </header>
             <h3 class="yourrating-legend">Lorem ipsum dolor sit amet, consectetur</h3>
           </div>
-          <ul class="food-list">
-            <li class="food-item">
-              <svg>
-              </svg>
-              <span class="food-name">Fresh Salad Bowl</span>
-              <span class="food-price">IDR 45.000</span>
-            </li>
-            <li class="food-item">
-              <svg>
-              </svg>
-              <span class="food-name">Chicken Noodles</span>
-              <span class="food-price">IDR 75.000</span>
-            </li>
-            <li class="food-item">
-              <svg>
-              </svg>
-              <span class="food-name">Hot Chicken Wings</span>
-              <span class="food-price">IDR 45.000</span>
-            </li>
-          </ul>
-          <canvas id="lineChart" #lineChart></canvas>
+
+          <div id="mostOrdered">
+            <header>
+              <h2>Most Ordered Food</h2>
+              <p>Adipiscing elit, sed do eiusmod tempor</p>
+            </header>
+
+            <ul class="food-list">
+              <li class="food-item">
+                <img src="salad.png" alt="Fresh Salad Bowl" class="food-image">
+                <span class="food-name">Fresh Salad Bowl</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+              <li class="food-item">
+                <img src="noodles.png" alt="Chicken Noodles" class="food-image">
+                <span class="food-name">Chicken Noodles</span>
+                <span class="food-price">IDR 75.000</span>
+              </li>
+              <li class="food-item">
+                <img src="fruits.png" alt="Smoothie Fruits" class="food-image">
+                <span class="food-name">Smoothie Fruits</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+              <li class="food-item">
+                <img src="wings.png" alt="Hot Chicken Wings" class="food-image">
+                <span class="food-name">Hot Chicken Wings</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+            </ul>
+          </div>
+          <div class="Order">
+            <header class="card-header">
+              <div class="order-info">
+                <p class="order-title">Order</p>
+                <h2 class="order-quantity">2.568</h2>
+                <p class="order-comparison">
+                  <span class="negative-change">↓ 2.1%</span> vs last week
+                </p>
+              </div>
+            </header>
+            <canvas id="lineChart" #lineChart></canvas>
+          </div>
         </div>
       </section>
     </main>

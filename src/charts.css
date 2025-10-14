@@ -2,7 +2,7 @@
     font-weight: 400;
     font-size: 18px;
     padding: 4px;
-    margin-top: 3.5vh;
+    margin-top: 2.5vh;
     margin-left: 1.5vw;
 }
 
@@ -17,8 +17,8 @@
 .top-row {
     display: flex;
     gap: 24px;
-    margin-bottom: 24px;
-    margin-top: 5vh;
+    margin-bottom: 1vh;
+    margin-top: 0.5vh;
 }
 
 .card-header {
@@ -131,6 +131,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
+
+#yourRating h2 {
+  font-size: 18px;
+  font-weight: 420;
+}
+
+#yourRating p {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-top: 0.3vh;
+}
+
+
 
 #mostOrdered {
   padding: 24px;

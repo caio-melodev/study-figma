@@ -21,6 +21,9 @@ export class App implements AfterViewInit {
   @ViewChild('doughnutChart') doughnutChart!: ElementRef<HTMLCanvasElement>;
   @ViewChild('barChart') barChart!: ElementRef<HTMLCanvasElement>;
   @ViewChild('lineChart') lineChart!: ElementRef<HTMLCanvasElement>;
+  @ViewChild('customChart1') customChart1!: ElementRef<HTMLCanvasElement>;
+  @ViewChild('customChart2') customChart2!: ElementRef<HTMLCanvasElement>;
+  @ViewChild('customChart3') customChart3!: ElementRef<HTMLCanvasElement>;
 
   ngAfterViewInit() {
     new Chart(this.doughnutChart.nativeElement, {
@@ -29,7 +32,7 @@ export class App implements AfterViewInit {
         labels: ['', '', ''],
         datasets: [
           {
-            label:'Afternoon',
+            label: 'Afternoon',
             data: [40, 32, 28],
             backgroundColor: ['#5A6ACF', '#8593ED', '#C7CEFF'],
             borderColor: 'rgba(4, 1, 1, 1)',
@@ -114,5 +117,34 @@ export class App implements AfterViewInit {
         },
       },
     });
+
+    const customCharts = [
+      { ref: this.customChart1, value: 85, color: '#F99C30' },
+      { ref: this.customChart2, value: 92, color: '#2FBFDE' },
+      { ref: this.customChart3, value: 75, color: '#6463D6' },
+    ];
+
+    customCharts.forEach(c => {
+      new Chart(c.ref.nativeElement, {
+        type: 'doughnut',
+        data: {
+          datasets: [
+            {
+              data: [c.value],
+              backgroundColor: [c.color],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          cutout: '0%',
+          plugins: {
+            legend: { display: false },
+            tooltip: { enabled: false },
+          },
+        },
+      });
+    });
+
   }
 }

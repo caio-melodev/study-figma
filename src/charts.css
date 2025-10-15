@@ -1,160 +1,235 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .content h1 {
-    font-weight: 400;
-    font-size: 18px;
-    padding: 4px;
-    margin-top: 2.5vh;
-    margin-left: 1.5vw;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 4px;
+  margin-top: 2.5vh;
+  margin-left: 1.5vw;
 }
 
 .charts {
-    padding: 24px;
+  padding: 24px;
 }
 
 .charts>* {
-    outline: 2px dashed #f44336;
+  outline: 2px dashed #f44336;
 }
 
 .top-row {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 1vh;
-    margin-top: 0.5vh;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 1vh;
+  margin-top: 0.5vh;
 }
 
 .card-header {
-    display: flex;
-    justify-content: space-between;
-    /* Joga os filhos para lados opostos */
-    align-items: flex-start;
-    /* Alinha os itens no topo */
+  display: flex;
+  justify-content: space-between;
+  /* Joga os filhos para lados opostos */
+  align-items: flex-start;
+  /* Alinha os itens no topo */
 }
 
 .bar-chart-container {
-    width: 47vw;
-    height: 15vh;
-    margin-top: 3vh;
+  width: 47vw;
+  height: 15vh;
+  margin-top: 3vh;
 }
 
 .revenue-title {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .revenue-info h2 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 1vh;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 1vh;
 }
 
 .positive-change {
-    color: #149D52;
-    margin-top: 2vh;
+  color: #149D52;
+  margin-top: 2vh;
 }
 
 .card-footer {
-    display: flex;
-    justify-content: left;
-    /* Centraliza os itens da legenda */
-    align-items: end;
-    gap: 24px;
+  display: flex;
+  justify-content: left;
+  /* Centraliza os itens da legenda */
+  align-items: end;
+  gap: 24px;
 }
 
 .legend-item {
-    margin-top: 1.5vh;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    color: #6c757d;
+  margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6c757d;
 }
 
 
 .legend-color-box {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .revenue-comparison {
-    font-size: 12px;
-    color: #737B8B;
+  font-size: 12px;
+  color: #737B8B;
 }
 
 .sales-date {
-    font-size: 13px;
-    font-weight: 400;
-    color: #737B8B;
-    margin-top: 2vh;
+  font-size: 13px;
+  font-weight: 400;
+  color: #737B8B;
+  margin-top: 2vh;
 }
 
 .report-button {
-    background-color: #f8f9fa;
-    border: 1px solid #DDE4F0;
-    border-radius: 6px;
-    padding: 8px 16px;
-    color: #5A6ACF;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #DDE4F0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: #5A6ACF;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .order-time {
-    padding-left: 14vw;
-    flex-grow: 1; 
+  padding-left: 14vw;
+  flex-grow: 1;
 }
 
 .order-time-date {
-    font-size: 13px;
-    font-weight: 400;
-    color: #737B8B;
+  font-size: 13px;
+  font-weight: 400;
+  color: #737B8B;
 }
 
 .doughnut-chart-container {
-  width: 121px;   
-  height: 124px;  
-  margin: 1vh auto; 
+  width: 121px;
+  height: 124px;
+  margin: 1vh auto;
   margin-top: 3vh;
-  position: relative; 
-  
+  position: relative;
+
 }
 
 .doughnutChart-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 
 .bottom-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-#yourRating h2 {
+#yourRating header h2 {
   font-size: 18px;
   font-weight: 420;
 }
 
-#yourRating p {
+#yourRating header p {
   font-size: 14px;
   color: #a0a0a0;
   margin-top: 0.3vh;
+}
+
+.custom-doughnuts {
+  position: relative;
+  width: 280px;   /* ajuste conforme necessário */
+  height: 240px;  /* altura do espaço */
+  margin: 41px auto;
+}
+
+.circle-large {
+  width: 168.73px;
+  height: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle-medium {
+  width: 122.35px;
+  height: auto;
+}
+
+.circle-small {
+  width: 103px;
+  height: auto;
+  left: 40px;
+  top: 0;
+}
+
+.circle {
+  position: absolute;
+}
+
+.circle canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.circle .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: thin;
+  font-size: 18px;
+  color: #fff;
+}
+
+.circle .label small {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* posições individuais */
+.circle:nth-child(1) { /*laranja */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle:nth-child(2) { /* azul */
+  left: -12px;
+  bottom: 0;
+}
+
+.circle:nth-child(3) { /* roxo*/
+  left: 40px;
+  top: 9px;
 }
 
 
 
 #mostOrdered {
   padding: 24px;
-  background-color: white; 
-  border-radius: 8px; 
+  background-color: white;
+  border-radius: 8px;
 }
 
 #mostOrdered header {
   padding-bottom: 16px;
   margin-bottom: 16px;
-  border-bottom: 1px solid #F1F2F7; 
+  border-bottom: 1px solid #F1F2F7;
 }
 
 #mostOrdered header h2 {
@@ -170,7 +245,7 @@
 }
 
 .food-list {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -178,8 +253,8 @@
 .food-item {
   display: flex;
   align-items: center;
-  padding: 12px 0; 
-  border-bottom: 1px solid #F1F2F7; 
+  padding: 12px 0;
+  border-bottom: 1px solid #F1F2F7;
 }
 
 .food-item:last-child {
@@ -190,10 +265,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   margin-right: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .food-name {
@@ -202,10 +277,11 @@
 }
 
 .food-price {
-  margin-left: auto; 
+  margin-left: auto;
   font-weight: 500;
   color: #3A4A58;
 }
+
 /*
 .content {}
 

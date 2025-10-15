@@ -104,16 +104,58 @@ export class App implements AfterViewInit {
     new Chart(this.lineChart.nativeElement, {
       type: 'line',
       data: {
-        labels: ['Jan', 'Feb', 'Mar'],
+        labels: ['01', '02', '03', '04', '05', '06'],
         datasets: [
-          { label: 'Dataset1', data: [30, 20, 15], borderColor: 'red' },
-          { label: 'Dataset2', data: [20, 60, 15], borderColor: 'purple' },
+          {
+            label: 'Last 6 days',
+            data: [20, 18, 30, 28, 22, 39],
+            borderColor: '#5A6ACF',
+            backgroundColor: '#5A6ACF',
+            fill: false,
+            pointRadius: 0,                 // bolinhas
+            pointBackgroundColor: '#5A6ACF',
+          },
+          {
+            label: 'Last Week',
+            data: [25, 31, 20, 34, 27, 30],
+            borderColor: '#E6E8EC',    
+            backgroundColor: '#E6E8EC',
+            fill: false,
+            pointRadius: 0,
+          },
         ],
       },
       options: {
-        responsive: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom',
+            labels: {
+              usePointStyle: true,
+              boxWidth: 8,
+              font: { size: 12 },
+            },
+          },
+          tooltip: {
+            enabled: true,
+            mode: 'nearest',
+            intersect: false,
+          },
+        },
         scales: {
-          y: { min: 10, max: 90 },
+          x: {
+            grid: { display: false },
+            ticks: {
+              color: '#A0A0A0',
+              font: { size: 12 },
+            },
+          },
+          y: {
+            grid: { color: '#F1F2F7' },
+            ticks: { display: false }, // tira os números do eixo Y
+          },
         },
       },
     });
@@ -121,7 +163,7 @@ export class App implements AfterViewInit {
     const customCharts = [
       { ref: this.customChart1, value: 85, color: '#F99C30' },
       { ref: this.customChart2, value: 92, color: '#2FBFDE' },
-      { ref: this.customChart3, value: 75, color: '#6463D6' },
+      { ref: this.customChart3, value: 75, color: '#7b5cff' },
     ];
 
     customCharts.forEach(c => {

@@ -73,9 +73,10 @@
 }
 
 .bar-chart-container {
-  height: 17vh;
+  height: 19vh;
   margin-top: 3vh;
-  margin-bottom: 3vh
+  margin-bottom: 3vh;
+  padding-bottom: 15px;
 }
 
 .revenue-title {

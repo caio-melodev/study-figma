@@ -146,18 +146,19 @@
 }
 
 .doughnut-chart-container {
-  width: 121px;
-  height: 124px;
+  width: 180px;
+  height: 180px;
   margin: 1vh auto;
   margin-top: 3vh;
   position: relative;
+  margin-bottom: 7vh;
 }
 
 .doughnutChart-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 60px;
 }
 
 .doughnutChart-legend-item {
@@ -190,6 +191,10 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.circle-large label {
+  font-size: 33.75px;
 }
 
 .circle-medium {

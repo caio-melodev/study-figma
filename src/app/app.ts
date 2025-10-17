@@ -163,7 +163,7 @@ export class App implements AfterViewInit {
     const customCharts = [
       { ref: this.customChart1, value: 85, color: '#F99C30' },
       { ref: this.customChart2, value: 92, color: '#2FBFDE' },
-      { ref: this.customChart3, value: 75, color: '#7b5cff' },
+      { ref: this.customChart3, value: 85, color: '#7b5cff' },
     ];
 
     customCharts.forEach(c => {

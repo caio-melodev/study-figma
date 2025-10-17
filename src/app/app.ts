@@ -48,17 +48,18 @@ export class App implements AfterViewInit {
           tooltip: {
             enabled: true,
             backgroundColor: '#37375C',
-            titleColor: '#FFFFFF', // Cor do título
-            bodyColor: '#C7CEFF', // Cor do corpo
+            titleColor: '#FFFFFF', 
+            bodyColor: '#C7CEFF', 
             titleAlign: 'left',
             bodyAlign: 'left',
             displayColors: false, // Remove o pequeno quadrado colorido de dentro do tooltip
-            padding:{
+            padding: {
               top: 16,
               bottom: 16,
-              left: 20,
-              right: 20,
+              left: 16,
+              right: 52,
             },
+
             callbacks: {
               title: function (context) {
                 return context[0].label; // Retorna 'Afternoon', 'Evening', ou 'Morning'
@@ -166,12 +167,12 @@ export class App implements AfterViewInit {
         maintainAspectRatio: false,
         plugins: {
           legend: {
-            display: true,
+            display: false,
             position: 'bottom',
             labels: {
               usePointStyle: true,
-              boxWidth: 8,
-              font: { size: 12 },
+              boxWidth: 10,
+              font: { size: 10 },
             },
           },
           tooltip: {

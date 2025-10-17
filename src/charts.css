@@ -73,8 +73,9 @@
 }
 
 .bar-chart-container {
-  height: 12vh;
+  height: 17vh;
   margin-top: 3vh;
+  margin-bottom: 3vh
 }
 
 .revenue-title {
@@ -84,7 +85,6 @@
 .revenue-info h2 {
   font-size: 20px;
   font-weight: 500;
-  margin-top: 1vh;
 }
 
 .positive-change {
@@ -263,7 +263,7 @@
   border-radius: 50%;
   background-color: #f0f0f0;
   margin-right: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 12px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }
 
@@ -274,8 +274,8 @@
 
 .food-price {
   margin-left: auto;
-  font-weight: 500;
-  color: #3A4A58;
+  font-weight: 400;
+  color: #737B8B;
 }
 
 .order-quantity {
@@ -307,4 +307,12 @@
   font-size: 16px;
   font-weight: 400;
   color: #000000;
+}
+
+.lineChart-container {
+  height: 22vh; /* Aumentado de 15vh para 20vh - ajuste conforme necessário */
+  margin-top: 2vh;
+  width: 76%;
+  margin-left: auto;
+  margin-right: auto;
 }

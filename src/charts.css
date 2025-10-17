@@ -10,32 +10,69 @@
   margin-left: 1.5vw;
 }
 
+/* GRID PRINCIPAL */
 .charts {
   padding: 24px;
-}
-
-.charts>* {
-  outline: 2px dashed #f44336;
-}
-
-.top-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-bottom: 1vh;
-  margin-top: 0.5vh;
+}
+
+.top-row,
+.bottom-row {
+  display: contents;
+}
+
+.revenue-card,
+.order-time,
+#yourRating,
+#mostOrdered,
+.Order {
+  padding: 24px;
+  border-right: 1px solid #C8CBD9;
+  border-bottom: 1px solid #C8CBD9;
+}
+
+.order-time,
+.Order {
+  border-right: none;
+}
+
+#yourRating,
+#mostOrdered,
+.Order {
+  border-bottom: none;
+}
+
+.revenue-card {
+  grid-column: span 2;
+}
+
+.order-time {
+  grid-column: span 1;
+}
+
+#yourRating {
+  grid-column: span 1;
+}
+
+#mostOrdered {
+  grid-column: span 1;
+}
+
+.Order {
+  grid-column: span 1;
+  align-self: start; 
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
-  /* Joga os filhos para lados opostos */
   align-items: flex-start;
-  /* Alinha os itens no topo */
 }
 
 .bar-chart-container {
-  width: 47vw;
-  height: 15vh;
+  height: 12vh;
   margin-top: 3vh;
 }
 
@@ -54,10 +91,14 @@
   margin-top: 2vh;
 }
 
+.revenue-comparison {
+  font-size: 12px;
+  color: #737B8B;
+}
+
 .card-footer {
   display: flex;
   justify-content: left;
-  /* Centraliza os itens da legenda */
   align-items: end;
   gap: 24px;
 }
@@ -71,17 +112,11 @@
   color: #6c757d;
 }
 
-
 .legend-color-box {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   display: inline-block;
-}
-
-.revenue-comparison {
-  font-size: 12px;
-  color: #737B8B;
 }
 
 .sales-date {
@@ -100,11 +135,6 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 12px;
-}
-
-.order-time {
-  padding-left: 14vw;
-  flex-grow: 1;
 }
 
 .order-time-date {
@@ -128,16 +158,11 @@
   gap: 24px;
 }
 
-
-.bottom-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-#yourRating header h2 {
-  font-size: 18px;
-  font-weight: 420;
+.doughnutChart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
 }
 
 #yourRating header p {
@@ -150,8 +175,11 @@
   position: relative;
   width: 280px;
   height: 240px;
-  /* altura do espaço */
   margin: 41px auto;
+}
+
+.circle {
+  position: absolute;
 }
 
 .circle-large {
@@ -165,17 +193,15 @@
 .circle-medium {
   width: 122.35px;
   height: auto;
+  left: -12px;
+  bottom: 0;
 }
 
 .circle-small {
   width: 103px;
   height: auto;
   left: 40px;
-  top: 0;
-}
-
-.circle {
-  position: absolute;
+  top: 9px;
 }
 
 .circle canvas {
@@ -201,44 +227,10 @@
   color: #fff;
 }
 
-/* posições individuais */
-.circle:nth-child(1) {
-  /*laranja */
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.circle:nth-child(2) {
-  /* azul */
-  left: -12px;
-  bottom: 0;
-}
-
-.circle:nth-child(3) {
-  /* roxo*/
-  left: 40px;
-  top: 9px;
-}
-
-
-
-#mostOrdered {
-  padding: 24px;
-  background-color: white;
-  border-radius: 8px;
-}
-
 #mostOrdered header {
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid #F1F2F7;
-}
-
-#mostOrdered header h2 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
 }
 
 #mostOrdered header p {
@@ -285,15 +277,38 @@
   color: #3A4A58;
 }
 
-/*
-.content {}
-
-#barChart {}
-#yourRating {}
-
-#mostOrdered {}
-#barChart {
-    
+.order-quantity {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-#lineChart {}*/
+.negative-change {
+  color: #F2383A;
+  margin-top: 2vh;
+}
+
+.order-comparison {
+  font-size: 12px;
+  color: #737B8B;
+}
+
+.order-info {
+  margin-bottom: 2vh;
+}
+
+.order-info p:last-child {
+  font-size: 13px;
+  color: #737B8B;
+  margin-top: 1vh;
+}
+
+.lineChart-container {
+  height: 15vh;
+  margin-top: 2vh;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}

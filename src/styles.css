@@ -47,9 +47,11 @@ tag → Alvo é todos os elementos daquela tag.*/
     /*espaçamento interno do campo 8px em cima/baixo, 12 dos lados*/
     color: #1F384C;
     font-size: 13px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 2vh;
+    font-weight: 300s;
+    border: 0px;
+    margin-left: 1vw;
+    background-color: #F6F6FB;
+    border-radius: 7%;
 }
 
 .user-menu span {

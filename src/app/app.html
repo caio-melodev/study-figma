@@ -92,126 +92,127 @@
 
     <main class="content">
       <h1>Dashboard</h1>
-<section class="charts">
-  <div class="top-row">
-    <div class="revenue-card">
-      <header class="card-header">
-        <div class="revenue-info">
-          <p class="revenue-title card-title">Revenue</p>
-          <h2 class="revenue-amount">IDR 7.852.000</h2>
-          <p class="revenue-comparison">
-            <span class="positive-change">↑ 2.1%</span> vs last week
-          </p>
-        </div>
-      </header>
-      <div class="bar-chart-container">
-        <h2 class="sales-date">Sales from 1-12 Dec, 2020</h2>
-        <canvas id="barChart" #barChart></canvas>
-        <footer class="card-footer">
-          <div class="legend-item">
-            <span class="legend-color-box" style="background-color: #5a6acf"></span>
-            <span>Last 6 days</span>
+      <section class="charts">
+        <div class="top-row">
+          <div class="revenue-card">
+            <header class="card-header">
+              <div class="revenue-info">
+                <p class="revenue-title card-title">Revenue</p>
+                <h2 class="revenue-amount">IDR 7.852.000</h2>
+                <p class="revenue-comparison">
+                  <span class="positive-change">↑ 2.1%</span> vs last week
+                </p>
+              </div>
+              <button class="report-button">View Report</button>
+            </header>
+            <div class="bar-chart-container">
+              <h2 class="sales-date">Sales from 1-12 Dec, 2020</h2>
+              <canvas id="barChart" #barChart></canvas>
+              <footer class="card-footer">
+                <div class="legend-item">
+                  <span class="legend-color-box" style="background-color: #5a6acf"></span>
+                  <span>Last 6 days</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color-box" style="background-color: #e6e8ec"></span>
+                  <span>Last Week</span>
+                </div>
+              </footer>
+            </div>
           </div>
-          <div class="legend-item">
-            <span class="legend-color-box" style="background-color: #e6e8ec"></span>
-            <span>Last Week</span>
-          </div>
-        </footer>
-      </div>
-    </div>
-    
-    <div class="order-time">
-      <header class="card-header">
-        <p class="order-time-title card-title">Order Time</p>
-        <button class="report-button">View Report</button>
-      </header>
-      <h2 class="order-time-date">From 1-12 Dec, 2020</h2>
-      <div class="doughnut-chart-container">
-        <canvas id="doughnutChart" #doughnutChart></canvas>
-      </div>
-      <footer class="doughnutChart-footer">
-        <div class="doughnutChart-legend-item">
-          <span class="legend-color-box" style="background-color: #5a6acf"></span>
-          <span>Afternoon<p>40%</p></span>
-        </div>
-        <div class="doughnutChart-legend-item">
-          <span class="legend-color-box" style="background-color: #8593ed"></span>
-          <span>Evening<p>32%</p></span>
-        </div>
-        <div class="doughnutChart-legend-item">
-          <span class="legend-color-box" style="background-color: #c7ceff"></span>
-          <span>Morning<p>28%</p></span>
-        </div>
-      </footer>
-    </div>
-  </div>
 
-  <div class="bottom-row">
-    <div id="yourRating">
-      <header>
-        <h2 class="card-title">Your Rating</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur</p>
-      </header>
-      <div class="custom-doughnuts">
-        <div class="circle circle-large">
-          <canvas #customChart1></canvas>
-          <div class="label">85%<br><small>Food Taste</small></div>
+          <div class="order-time">
+            <header class="card-header">
+              <p class="order-time-title card-title">Order Time</p>
+              <button class="report-button">View Report</button>
+            </header>
+            <h2 class="order-time-date">From 1-12 Dec, 2020</h2>
+            <div class="doughnut-chart-container">
+              <canvas id="doughnutChart" #doughnutChart></canvas>
+            </div>
+            <footer class="doughnutChart-footer">
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #5a6acf"></span>
+                <span>Afternoon<p>40%</p></span>
+              </div>
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #8593ed"></span>
+                <span>Evening<p>32%</p></span>
+              </div>
+              <div class="doughnutChart-legend-item">
+                <span class="legend-color-box" style="background-color: #c7ceff"></span>
+                <span>Morning<p>28%</p></span>
+              </div>
+            </footer>
+          </div>
         </div>
-        <div class="circle circle-medium">
-          <canvas #customChart2></canvas>
-          <div class="label">92%<br><small>Packaging</small></div>
+
+        <div class="bottom-row">
+          <div id="yourRating">
+            <header>
+              <h2 class="card-title">Your Rating</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </header>
+            <div class="custom-doughnuts">
+              <div class="circle circle-large">
+                <canvas #customChart1></canvas>
+                <div class="label">85%<br><small>Food Taste</small></div>
+              </div>
+              <div class="circle circle-medium">
+                <canvas #customChart2></canvas>
+                <div class="label">92%<br><small>Packaging</small></div>
+              </div>
+              <div class="circle circle-small">
+                <canvas #customChart3></canvas>
+                <div class="label">75%<br><small>Hygiene</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="mostOrdered">
+            <header>
+              <h2 class="card-title">Most Ordered Food</h2>
+              <p>Adipiscing elit, sed do eiusmod tempor</p>
+            </header>
+            <ul class="food-list">
+              <li class="food-item">
+                <img src="salad.png" alt="Fresh Salad Bowl" class="food-image">
+                <span class="food-name">Fresh Salad Bowl</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+              <li class="food-item">
+                <img src="noodles.png" alt="Chicken Noodles" class="food-image">
+                <span class="food-name">Chicken Noodles</span>
+                <span class="food-price">IDR 75.000</span>
+              </li>
+              <li class="food-item">
+                <img src="fruits.png" alt="Smoothie Fruits" class="food-image">
+                <span class="food-name">Smoothie Fruits</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+              <li class="food-item">
+                <img src="wings.png" alt="Hot Chicken Wings" class="food-image">
+                <span class="food-name">Hot Chicken Wings</span>
+                <span class="food-price">IDR 45.000</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="Order">
+            <header class="card-header">
+              <h2 class="card-title">Order</h2>
+              <button class="report-button">View Report</button>
+            </header>
+            <div class="order-info">
+              <p class="order-quantity">2.568</p>
+              <p class="order-comparison">
+                <span class="negative-change">↓ 2.1%</span> vs last week
+              </p>
+              <p>Sales from 1-6 Dec, 2020</p>
+            </div>
+            <div class="lineChart-container">
+              <canvas id="lineChart" #lineChart></canvas>
+            </div>
+          </div>
         </div>
-        <div class="circle circle-small">
-          <canvas #customChart3></canvas>
-          <div class="label">75%<br><small>Hygiene</small></div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="mostOrdered">
-      <header>
-        <h2 class="card-title">Most Ordered Food</h2>
-        <p>Adipiscing elit, sed do eiusmod tempor</p>
-      </header>
-      <ul class="food-list">
-        <li class="food-item">
-          <img src="salad.png" alt="Fresh Salad Bowl" class="food-image">
-          <span class="food-name">Fresh Salad Bowl</span>
-          <span class="food-price">IDR 45.000</span>
-        </li>
-        <li class="food-item">
-          <img src="noodles.png" alt="Chicken Noodles" class="food-image">
-          <span class="food-name">Chicken Noodles</span>
-          <span class="food-price">IDR 75.000</span>
-        </li>
-        <li class="food-item">
-          <img src="fruits.png" alt="Smoothie Fruits" class="food-image">
-          <span class="food-name">Smoothie Fruits</span>
-          <span class="food-price">IDR 45.000</span>
-        </li>
-        <li class="food-item">
-          <img src="wings.png" alt="Hot Chicken Wings" class="food-image">
-          <span class="food-name">Hot Chicken Wings</span>
-          <span class="food-price">IDR 45.000</span>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="Order">
-      <header class="card-header">
-        <h2 class="card-title">Order</h2>
-        <button class="report-button">View Report</button>
-      </header>
-      <div class="order-info">
-        <p class="order-quantity">2.568</p>
-        <p class="order-comparison">
-          <span class="negative-change">↓ 2.1%</span> vs last week
-        </p>
-        <p>Sales from 1-6 Dec, 2020</p>
-      </div>
-      <div class="lineChart-container">
-        <canvas id="lineChart" #lineChart></canvas>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>

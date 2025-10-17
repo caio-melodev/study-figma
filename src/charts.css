@@ -12,10 +12,11 @@
 
 /* GRID PRINCIPAL */
 .charts {
-  padding: 24px;
+  padding: 0;
+  margin: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 0;
 }
 
 .top-row,
@@ -62,7 +63,7 @@
 
 .Order {
   grid-column: span 1;
-  align-self: start; 
+  align-self: start;
 }
 
 .card-header {
@@ -300,11 +301,6 @@
   font-size: 13px;
   color: #737B8B;
   margin-top: 1vh;
-}
-
-.lineChart-container {
-  height: 15vh;
-  margin-top: 2vh;
 }
 
 .card-title {

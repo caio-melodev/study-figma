@@ -1,59 +1,56 @@
-# FigmaFrontendAngular
+# GoodFood Dashboard - Implementação em Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+Este projeto é um exercício de desenvolvimento front-end focado em recriar um design público do Figma utilizando o framework Angular. O objetivo principal é aprimorar habilidades práticas em componentização, layout com CSS Grid e Flexbox, e integração de bibliotecas de visualização de dados.
 
-## Development server
+O design original, chamado **Goodfood - Dashboard UI Kit**, foi criado por [AR Jakir](https://www.figma.com/@arjakir) e está disponível na Comunidade Figma.
 
-To start a local development server, run:
+**[Link para o Design Original no Figma](https://www.figma.com/community/file/1048559673287861086)**
 
-```bash
-ng serve
-```
+## ✨ Funcionalidades Implementadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Layout Responsivo:** Estrutura principal construída com CSS Grid e Flexbox para garantir que o dashboard seja bem organizado.
+* **Componentes Modulares:**
+    * Sidebar de navegação fixa.
+    * Topbar com campo de busca e menu de usuário.
+    * Cards de dados para Receita (Revenue), Tempo de Pedido (Order Time), Avaliações (Your Rating), e mais.
+* **Visualização de Dados:**
+    * Integração com a biblioteca **Chart.js** para renderizar os gráficos.
+    * Implementação de gráficos de Barras, Rosca (Doughnut) e Linha.
+* **Estilização Avançada:**
+    * Recriação fiel dos estilos, espaçamentos e tipografia propostos no design.
+    * Criação de uma grade com linhas separadoras entre os componentes para uma organização visual clara.
 
-## Code scaffolding
+## 🛠️ Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Framework:** [Angular](https://angular.io/)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+* **Visualização de Dados:** [Chart.js](https://www.chartjs.org/)
+* **Estilização:** CSS3 (com foco em Flexbox e CSS Grid)
+* **HTML5**
 
-```bash
-ng generate component component-name
-```
+## 🚀 Como Executar o Projeto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para rodar este projeto localmente, siga os passos abaixo:
 
-```bash
-ng generate --help
-```
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://seu-link-para-o-repositorio.git](https://seu-link-para-o-repositorio.git)
+    ```
 
-## Building
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-To build the project run:
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-```bash
-ng build
-```
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    ng serve
+    ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+5.  **Abra no navegador:**
+    Acesse `http://localhost:4200/` no seu navegador para ver a aplicação rodando.

@@ -48,8 +48,8 @@ export class App implements AfterViewInit {
           tooltip: {
             enabled: true,
             backgroundColor: '#37375C',
-            titleColor: '#FFFFFF', 
-            bodyColor: '#C7CEFF', 
+            titleColor: '#FFFFFF',
+            bodyColor: '#C7CEFF',
             titleAlign: 'left',
             bodyAlign: 'left',
             displayColors: false, // Remove o pequeno quadrado colorido de dentro do tooltip
@@ -198,9 +198,9 @@ export class App implements AfterViewInit {
     });
 
     const customCharts = [
-      { ref: this.customChart1, value: 85, color: '#F99C30' },
-      { ref: this.customChart2, value: 92, color: '#2FBFDE' },
-      { ref: this.customChart3, value: 85, color: '#7b5cff' },
+      { ref: this.customChart1, value: 85, color: 'rgba(249, 156, 48, 0.83)', borderColor: '#F99C30' },
+      { ref: this.customChart2, value: 92, color: 'rgba(47, 191, 222, 0.85)', borderColor: '#2FBFDE'  },
+      { ref: this.customChart3, value: 85, color: 'rgba(100, 99, 214, 0.79)', borderColor: '#6463D6'  },
     ];
 
     customCharts.forEach(c => {

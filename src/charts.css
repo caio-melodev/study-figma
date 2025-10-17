@@ -67,7 +67,8 @@
 }
 
 .Order .order-info p:last-child {
-  margin-top: 2vh; /* Ajuste este valor conforme necessário */
+  margin-top: 2vh;
+  /* Ajuste este valor conforme necessário */
 }
 
 .card-header {
@@ -200,8 +201,14 @@
   transform: translateY(-50%);
 }
 
-.circle-large label {
+.circle-large .label {
+  /*Porcentagem*/
   font-size: 33.75px;
+}
+
+.circle-large .label small {
+  /* Food Taste */
+  font-size: 12.65px;
 }
 
 .circle-medium {
@@ -211,11 +218,32 @@
   bottom: 0;
 }
 
+.circle-medium .label {
+  /*Porcentagem*/
+  font-size: 24px;
+}
+
+.circle-medium .label small {
+  /* Packaging */
+  font-size: 12px;
+}
+
 .circle-small {
   width: 103px;
   height: auto;
-  left: 40px;
+  left: 32px;
   top: 9px;
+}
+
+
+.circle-small .label {
+  /*Porcentagem*/
+  font-size: 20.75px;
+}
+
+.circle-small .label small {
+  /* Hygiene */
+  font-size: 12px;
 }
 
 .circle canvas {
@@ -230,14 +258,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: thin;
-  font-size: 18px;
   color: #fff;
+  line-height: 1;
 }
 
-.circle .label small {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
+.circle-medium label {
+  font-size: 40px;
   color: #fff;
 }
 
@@ -324,7 +350,8 @@
 }
 
 .lineChart-container {
-  height: 22vh; /* Aumentado de 15vh para 20vh - ajuste conforme necessário */
+  height: 22vh;
+  /* Aumentado de 15vh para 20vh - ajuste conforme necessário */
   margin-top: 2vh;
   width: 76%;
   margin-left: auto;

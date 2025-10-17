@@ -7,7 +7,7 @@
   font-size: 18px;
   padding: 4px;
   margin-top: 2.5vh;
-  margin-left: 1.5vw;
+  margin-left: 2.6%;
 }
 
 /* GRID PRINCIPAL */
@@ -91,6 +91,7 @@
 .positive-change {
   color: #149D52;
   margin-top: 2vh;
+  font-weight: 600;
 }
 
 .revenue-comparison {
@@ -110,13 +111,13 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 13px;
   color: #6c757d;
 }
 
 .legend-color-box {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -249,13 +250,13 @@
 .food-list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .food-item {
   display: flex;
   align-items: center;
   padding: 12px 0;
+  margin-bottom: 4%;
   border-bottom: 1px solid #F1F2F7;
 }
 
@@ -264,8 +265,8 @@
 }
 
 .food-image {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #f0f0f0;
   margin-right: 16px;
@@ -274,7 +275,7 @@
 }
 
 .food-name {
-  font-weight: 500;
+  font-weight: 400;
   color: #3A4A58;
 }
 
@@ -292,6 +293,7 @@
 .negative-change {
   color: #F2383A;
   margin-top: 2vh;
+  font-weight: 600;
 }
 
 .order-comparison {

@@ -29,13 +29,11 @@ export class App implements AfterViewInit {
     new Chart(this.doughnutChart.nativeElement, {
       type: 'doughnut',
       data: {
-        labels: ['', '', ''],
+        labels: ['Afternoon', 'Evening', 'Morning'],
         datasets: [
           {
-            label: 'Afternoon',
-            data: [40, 32, 28],
+            data: [1890, 1512, 1323], // 40%, 32%, 28% de um total de 4725 (exemplo)
             backgroundColor: ['#5A6ACF', '#8593ED', '#C7CEFF'],
-            borderColor: 'rgba(4, 1, 1, 1)',
             borderWidth: 0,
           },
         ],
@@ -46,6 +44,44 @@ export class App implements AfterViewInit {
         plugins: {
           legend: {
             display: false,
+          },
+          tooltip: {
+            enabled: true,
+            backgroundColor: '#37375C',
+            titleColor: '#FFFFFF', // Cor do título
+            bodyColor: '#C7CEFF', // Cor do corpo
+            titleAlign: 'left',
+            bodyAlign: 'left',
+            displayColors: false, // Remove o pequeno quadrado colorido de dentro do tooltip
+            padding:{
+              top: 16,
+              bottom: 16,
+              left: 20,
+              right: 20,
+            },
+            callbacks: {
+              title: function (context) {
+                return context[0].label; // Retorna 'Afternoon', 'Evening', ou 'Morning'
+              },
+              label: function (context) {
+                const value = context.raw as number;
+
+                let timeRange = '';
+                if (context.label === 'Afternoon') {
+                  timeRange = '1pm - 4pm';
+                } else if (context.label === 'Evening') {
+                  timeRange = '5pm - 8pm';
+                } else if (context.label === 'Morning') {
+                  timeRange = '9am - 12pm';
+                }
+                // Retorna um array de strings, cada string vira uma linha
+                return [
+                  timeRange,
+                  '',
+                  `${value.toLocaleString('pt-BR')} orders`,
+                ];
+              },
+            },
           },
         },
       },
@@ -118,7 +154,7 @@ export class App implements AfterViewInit {
           {
             label: 'Last Week',
             data: [25, 31, 20, 34, 27, 30],
-            borderColor: '#E6E8EC',    
+            borderColor: '#E6E8EC',
             backgroundColor: '#E6E8EC',
             fill: false,
             pointRadius: 0,

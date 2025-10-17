@@ -193,12 +193,50 @@
   position: absolute;
 }
 
+.circle canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 50%;
+
+  background: transparent;
+  box-shadow: inset 0 0 0 1.8px currentColor;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 50 50 L 50 0 A 50 50 0 1 1 6.7 75 Z" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 50 50 L 50 0 A 50 50 0 1 1 6.7 75 Z" fill="black"/></svg>');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  pointer-events: none;
+}
+
+.circle .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: thin;
+  color: #fff;
+  line-height: 1;
+}
+
 .circle-large {
   width: 168.73px;
-  height: auto;
+  height: 168.73px;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  color: #F99C30;
 }
 
 .circle-large .label {
@@ -213,9 +251,10 @@
 
 .circle-medium {
   width: 122.35px;
-  height: auto;
+  height: 122.35px;
   left: -12px;
   bottom: 0;
+  color: #2FBFDE;
 }
 
 .circle-medium .label {
@@ -230,11 +269,11 @@
 
 .circle-small {
   width: 103px;
-  height: auto;
+  height: 103px;
   left: 32px;
   top: 9px;
+  color: #5a6acf;
 }
-
 
 .circle-small .label {
   /*Porcentagem*/
@@ -246,26 +285,6 @@
   font-size: 12px;
 }
 
-.circle canvas {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.circle .label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-weight: thin;
-  color: #fff;
-  line-height: 1;
-}
-
-.circle-medium label {
-  font-size: 40px;
-  color: #fff;
-}
 
 #mostOrdered header {
   padding-bottom: 16px;

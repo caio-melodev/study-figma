@@ -80,3 +80,10 @@
     margin-left: 8%;
     list-style: none;
 }
+
+.menu-item:focus {
+  background-color: #EAEAFB; /* O roxo claro */
+  color: #5A67BA;
+  border-radius: 6px;
+  font-weight: 500;
+}
